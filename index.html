@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Project bootsrap</title>
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      .d{
+        background-image: url(/static/images/roll.jpg);
+        background-repeat: no-repeat;  
+        background-size: 100% 100%;
+        background-color: #fff6f6;
+        margin-top: 10%;
+        height: 400px;
+       
+
+      }
+    </style>
+</head>
+<body >
+    <!-- Navbar -->
+    <div class="row">
+      <nav class="navbar fixed-top navbar-expand-lg bg-dark
+       shadow p-3 "  >
+        <div class="container-fluid">
+          <a
+            class="navbar-brand  text-warning" href="index.html"
+            style="font-family: cursive ,font-ans-serif; "
+            > <img src="/static/images/ll.png" alt="" width="60" height="50"> <strong>I'<span>m</span> Foodie</strong></a
+          >
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item  ">
+                <a class="nav-link active text-warning" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item  ">
+                <a class="nav-link text-warning" href="about.html">About</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link text-warning" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link text-warning" data-bs-toggle="modal" data-bs-target="#exampleModal" >Login</a>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body ">
+                        <main class="section" style="background-color: #fff6f6"> 
+    
+                          <div class="container p-5 bg-black" >
+                              <div class="row" data-aos="fade-up" data-aos-delay="400" >
+                                  <div class="col-md-12 mx-auto shadow p-5 bg-black" style="border: 2px #0d2435; background-image:linear-gradient(rgb(255, 255, 255),rgba(255, 217, 92, 0.993));">
+                                      <div class="imgcontainer " style="text-align: center;">
+                                          <img src="/static/images/1.jpg" alt="Avatar" class="avatar">
+                                        </div>
+                                      <h5 class="text-center text-bold mt-5">Login</h5><br>
+                                      <form action="index.html" method="post">
+                                          <div class="mb-2 ">
+                                              <label for="Input1" class="form-label">Username:</label>
+                                              <input type="text" class="form-control" id="Input1">
+                                          </div>
+                                          <div class="mb-2">
+                                              <label for="Input2" class="form-label">Email:</label>
+                                              <input type="email" class="form-control" id="Input2">
+                                          </div>
+                                          <div class="mb-2">
+                                              <label for="Input3" class="form-label">Password:</label>
+                                              <input type="password" class="form-control" id="Input3">
+                                          </div>
+                                         
+                                          <div class="mb-2">
+                                              <input type="submit" value="Login" class="btn btn-dark">
+                                              &nbsp; New  Register ? &nbsp;&nbsp; <a href="Signup.html" >Register</a>
+                                          </div>
+                                      </form>
+                                  </div>
+                              </div>
+                          </div>
+                      
+                      </main>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link text-warning" href="Signup.html">Signup</a>
+              </li>
+              <li class="nav-item dropdown  ">
+                <a class="nav-link dropdown-toggle text-warning" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu text-warning">
+                  <li>
+                    <a class="dropdown-item text-warning" href="products.html">Products</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-warning" href="place_order.html"
+                      >Place Order</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item text-warning" href="cart.html">Add Cart</a>
+                  </li>
+                  
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2  bg-dark text-warning btn-outline-warning" type="search" placeholder="Search " aria-label="Search">
+              <button class="btn btn-outline-warning" type="submit">Search</button>
+            </form>
+            <div class="btn ">
+              <a href="cart.html"> <i class="bi bi-cart3 text-warning text-bold"></i></a>
+            </div>
+            
+            <!-- <li class="nav-item  ">     
+              <button class="navbar-toggler " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon color-red"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    
+                  </ul>
+                 
+                </div>
+              </div>
+            </li> -->
+        
+          </div>
+        </div>
+      </nav>
+    
+    <br>
+        <br>
+        <br>
+        <div class="d row mt-5">
+          <div class="col-md-6 text-dark mt-5 h-100% text-center text-uppercase "><h1 class="h1 text-dark " style="font-family: cursive;" ><br>Welcome !<br><b class="cc text-warning" style="font-family: cursive;  font-size:  60px; ">I'm Foodie</b> </h1>
+          <br>
+          <p class="t text-dark">Order the food of your choice..</p>
+          <br>
+          <br>
+          <br>
+          <br>
+          </div> 
+          <div class="col-md-5 text-white">
+            <!-- <div id="carouselExampleSlidesOnly" class="carousel slide " data-bs-ride="carousel">
+              <div class="carousel-inner" >
+              <div class="carousel-item active" style="height:250px;">
+                  <img src="/static/images/image/ff.jpeg" class=" d-block w-90  " style="height:250px;"alt="...">
+              </div>
+              <div class="carousel-item" style="height:400px;">
+                  <img src="/static/images/image/of.jpeg" class="d-block w-90 "style="height:250px;" alt="...">
+              </div>
+              <div class="carousel-item" style="height:400px;">
+                  <img src="/static/images/image/o.jpeg" class="d-block w-90"style="height:250px;" alt="...">
+              </div>
+              </div>
+              </div> -->
+            </div>
+          </div>
+        
+        </div>
+      </div>
+            <!-- <div class="col-md-5 p-5 "  >
+                <div id="carouselExampleSlidesOnly" class="carousel slide " data-bs-ride="carousel">
+                    <div class="carousel-inner" >
+                    <div class="carousel-item active" style="height:250px;">
+                        <img src="/static/images/vada.jpg" class=" d-block w-100  " style="height:250px;"alt="...">
+                    </div>
+                    <div class="carousel-item" style="height:400px;">
+                        <img src="/static/images/f2.jpg" class="d-block w-100 "style="height:250px;" alt="...">
+                    </div>
+                    <div class="carousel-item" style="height:400px;">
+                        <img src="/static/images/f.jpg" class="d-block w-100"style="height:250px;" alt="...">
+                    </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    <br>
+      
+    <div class="con" >
+      
+      <h3 class="as text-black p-3  text-center rounded shadow text-dark  font-size:  50px;"><b class="hh font-family:cursive">OUR MENU </b></h3>
+      <div class="col-md-12 mt-5 ms-5">
+          <div class="row ">
+            <!-- <main>
+              <h1 class="visually-hidden" id="sidebar">Sidebars examples</h1>
+            
+              <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px;">
+                <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                  <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+                  <span class="fs-4">Sidebar</span>
+                </a>
+                <hr>
+                <ul class="nav nav-pills flex-column mb-auto">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link active" aria-current="page">
+                      <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+                      Home
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link text-white">
+                      <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
+                      Dashboard
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link text-white">
+                      <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
+                      Orders
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link text-white">
+                      <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"></use></svg>
+                      Products
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link text-white">
+                      <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
+                      Customers
+                    </a>
+                  </li>
+                </ul>
+                <hr>
+                <div class="dropdown">
+                  <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+                    <strong>mdo</strong>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1" style="">
+                    <li><a class="dropdown-item" href="#">New project...</a></li>
+                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Sign out</a></li>
+                  </ul>
+                </div>
+              </div>
+            
+            <div class="b-example-divider"></div>
+            </main> -->
+              <div class="col-md-3 mt-5 ">
+                  <div class="card text-white shadow bg-black" style="width: 16rem;  background-color:black;"  data-aos="flip-left" data-aos-delay="900">
+                      <img src="/static/images/brger.jpeg" class="card-img-top" alt="..." height="160px" >
+                      <div class="card-body " >
+                        <h5 class="card-title">Burger with Fries</h5>
+                        <p class="card-text"><strong>Price: </strong>Rs.13400</p>
+                        <a href="products.html" class="btn btn-dark">See Details</a>
+                      </div>
+                    </div>
+              </div>
+              <div class="col-md-3 mt-5">
+                  <div class="card text-white shadow bg-black" style="width: 16rem; background-color:black;"data-aos="fade-left" data-aos-delay="1000">
+                      <img src="/static/images/8.jpeg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text"><strong>Price: </strong>Rs.400</p>
+                        <a href="products.html" class="btn btn-dark">See Details</a>
+                      </div>
+                    </div>
+              </div>
+              <div class="col-md-3 mt-5">
+                  <div class="card text-white shadow bg-black" style="width: 16rem;background-color:black;" data-aos="fade-left" data-aos-delay="1200">
+                      <img src="/static/images/b3.jpeg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Desert</h5>
+                        <p class="card-text"><strong>Price: </strong>Rs.299</p>
+                        <a href="products.html" class="btn btn-dark">See Details</a>
+                      </div>
+                    </div>
+              </div>
+              <div class="col-md-3 mt-5">
+                  <div class="card text-white  shadow bg-black" style="width: 16rem;background-color:black;" data-aos="fade-left" data-aos-delay="1400">
+                      <img src="/static/images/sandwitch.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Choclate Sandwitch</h5>
+                        <p class="card-text"><strong>Price: </strong>Rs.300</p>
+                        <a href="products.html" class="btn btn-dark">See Details</a>
+                      </div>
+                    </div>
+              </div>
+          </div>
+      </div>
+      <!-- our team -->
+       <!-- Team Container -->
+<div class="w3-container w3-padding-64 w3-center  text-dark bg-black mt-5" id="team">
+  <h2 class="team shadow p-3">OUR TEAM</h2>
+  <!-- <p>Meet the team - our office rats:</p> -->
+  
+  <div class="w3-row"><br>
+  
+  <div class="w3-quarter">
+    <img src="/static/images/image/shef4.jpeg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+    <h3>Johnny Walker</h3>
+    <p>Web Designer</p>
+  </div>
+  
+  <div class="w3-quarter">
+    <img src="/static/images/image/88.jpeg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+    <h3>Rebecca Flex</h3>
+    <p>Support</p>
+  </div>
+  
+  <div class="w3-quarter">
+    <img src="/static/images/c2.jpeg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+    <h3>Jan Ringo</h3>
+    <p>Boss man</p>
+  </div>
+  
+  <div class="w3-quarter">
+    <img src="/static/images/image/shef6.jpeg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+    <h3>Kai Ringo</h3>
+    <p>Fixer</p>
+  </div>
+  
+  </div>
+  </div>
+    </div>
+
+ 
+<!-- footer -->
+ <div class="row mt-5 " data-aos="fade-up" data-aos-delay="1600">
+  <footer class=" text-black pt-5 pb-4 bg-dark"  >
+    <div class="container text-white text-center text-md-left">
+      <div class="row text-center text-md-left">
+
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Company Name</h5>
+          <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Products</h5>
+          <p>
+            <a href="#" class="text-white" style="text-decoration: none;"> TheProviders</a>
+          </p>
+          <p>
+            <a href="#" class="text-white" style="text-decoration: none;"> Creativity</a>
+          </p>
+          <p>
+            <a href="#" class="text-white" style="text-decoration: none;"> SourceFiles</a>
+          </p>
+          <p>
+            <a href="#" class="text-white" style="text-decoration: none;"> bootstrap 5 alpha</a>
+          </p>
+        </div>
+
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Useful links</h5>
+          <p>
+            <a href="#" class="text-white" style="text-decoration: none;"> Your Account</a>
+          </p>
+          <p>
+            <a href="#" class="text-white" style="text-decoration: none;"> Become an Affiliate</a>
+          </p>
+          <p>
+            <a href="#" class="text-white" style="text-decoration: none;"> Shipping Rates</a>
+          </p>
+          <p>
+            <a href="#" class="text-white" style="text-decoration: none;"> Help</a>
+          </p>
+        </div>
+
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contact</h5>
+          <p>
+            <i class="fas fa-home mr-3"></i> New York, NY 2333, US
+          </p>
+          <p>
+            <i class="fas fa-envelope mr-3"></i> info@gmail.com
+          </p>
+          <p>
+            <i class="fas fa-phone mr-3"></i> + 01 234 567 88
+          </p>
+          <p>
+            <i class="fas fa-print mr-3"></i> + 01 234 567 89
+          </p>
+        </div>
+
+      </div>
+
+      <hr class="mb-4">
+
+      <div class="row align-items-center">
+        <div class="col-md-7 col-lg-8">
+          <p class="text-center text-md-left">© 2023 Copyright:
+            <a href="#" class="text-white">
+              <strong class="text-warning">TheProviders.com</strong>
+            </a>
+          </p>
+        </div>
+
+        <div class="col-md-5 col-lg-4">
+          <div class="text-center text-md-right">
+            <ul class="list-unstyled list-inline">
+              <li class="list-inline-item">
+                <a href="/static/images/linkedin.png"  class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-facebook"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-google-plus"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-linkedin-in"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+
+      </div>
+    </div>
+  </footer>
+ </div>
+
+</body>
+<script src="static/js/bootstrap.min.js"></script>
+<script src="static/js/proper.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</html>

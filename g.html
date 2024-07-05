@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            height: 200px;
+            width: 300px;
+            background-color: blue;
+            position: absolute;
+            bottom:0;
+            animation: moveFromBottomToTop 10s normal;
+        }
+
+        @keyframes moveFromBottomToTop {
+            0% {
+                bottom: 0;
+                background-color: blue;
+            }
+            50% {
+                bottom: calc(100% - 200px); /* Move to the right edge minus the container width */
+                background-color: red;
+            }
+            100% {
+                bottom: 0;
+                background-color: blue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    </div>
+</body>
+</html>
